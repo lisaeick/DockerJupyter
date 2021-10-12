@@ -14,5 +14,8 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
-    - name: Build the Docker image
+    - name: lisaeick
+      env: 
+        DOCKER_USER: ${{}} 
+        DOCKER_PASSWORD: ${{}}
       run: docker build . --file Dockerfile --tag my-image-name:$(date +%s)
