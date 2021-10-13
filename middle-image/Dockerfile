@@ -1,9 +1,9 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 ARG OWNER=lisaeick
-ARG BASE_CONTAINER=$OWNER/base-image
+ARG BASE_CONTAINER=$OWNER/dockerjupyter-base
 
-FROM BASE_CONTAINER
+FROM $BASE_CONTAINER
 
 LABEL maintainer=""
 
