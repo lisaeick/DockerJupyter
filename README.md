@@ -48,8 +48,20 @@ In this image, specific adjustments are made. The scikit-learn version is set to
 ```
 - sudo docker run --user root -v /path/to/my/Code:/home/jovyan -e GRANT_SUDO=yes -it --rm -p 8888:8888 final-jupyter
 ```
-**6. Now go to your browser and type in:**
+**6. Copy the accesstoke:**
+
+- In your terminal something like that should be visible: 
+  - "To access the notebook, open this file in a browser:
+        file:///home/jovyan/.local/share/jupyter/runtime/nbserver-18-open.html
+    Or copy and paste one of these URLs:
+        http://xxxxxxxxx:8888/?token=4123456789012345678234567123456781234567879b9f9m
+     or http://xxxxxxxxx:8888/?token=4123456789012345678234567123456781234567879b9f9m"
+- copy the token number (4123456789012345678234567123456781234567879b9f9m in this case)
+- You can copy within the terminal like this: CTRL + Shift + C
+
+**7. Now go to your browser and type in:**
 
 - http://localhost:8888/
+- copy in the security token
 
 Have fun coding!
