@@ -1,4 +1,4 @@
-FROM middle-image
+FROM lisaeick/dockerjupyter-middle
 
 LABEL maintainer="Lisa Eick <>"
 
