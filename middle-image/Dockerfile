@@ -1,8 +1,9 @@
 # Copyright (c) Jupyter Development Team.
 # Distributed under the terms of the Modified BSD License.
 ARG OWNER=jupyter
-ARG BASE_CONTAINER=$OWNER/mitte
-FROM base-image
+ARG BASE_CONTAINER=$OWNER/base-image
+
+FROM BASE_CONTAINER
 
 LABEL maintainer=""
 
