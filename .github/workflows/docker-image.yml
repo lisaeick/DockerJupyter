@@ -43,3 +43,7 @@ jobs:
       run: docker build . --file base-image/Dockerfile --tag ${{secrets.DOCKER_USER}}/dockerjupyter-base
     - name: Docker push
       run: docker push ${{secrets.DOCKER_USER}}/dockerjupyter-base
+    - name: Build the Docker image
+      run: docker build . --file middle-image/Dockerfile --tag ${{secrets.DOCKER_USER}}/dockerjupyter-middle
+    - name: Docker push
+      run: docker push ${{secrets.DOCKER_USER}}/dockerjupyter-middle
