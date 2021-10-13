@@ -32,7 +32,7 @@ In this image, specific adjustments are made. The scikit-learn version is set to
 ```
 - sudo docker pull lisaeick/dockerjupyter-final
 ```
-**2,5. This will rename the tag, so that the tag becomes more handy (no necessary step):**
+**2,5. This will rename the tag, so that the tag becomes more handy (Not a necessary step):**
 ```
 - sudo docker tag lisaeick/dockerjupyter-final final-jupyter
 ```
