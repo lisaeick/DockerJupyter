@@ -29,25 +29,25 @@ In this image, specific adjustments are made. The scikit-learn version is set to
 - Install docker (https://docs.docker.com/engine/install/ubuntu/)
 
 **2. This will create an image on you computer based on the "final-image" dockerfile:**
-
+```
 - sudo docker pull lisaeick/dockerjupyter-final
-
+```
 **2,5. This will rename the tag, so that the tag becomes more handy (no necessary step):**
-
+```
 - sudo docker tag lisaeick/dockerjupyter-final final-jupyter
-
+```
 **3. If you want the Environment beeing able to have access to your data and code you have to create a directory:**
 
 - /path/to/my/Code
 
 **4. You have to change the rights of that folder and all subfolder, so that it is changeable for everyone:**
-
+```
 - chmod -R 777 path/to/my/Code
-
+```
 **5. This will start the container:**
-
+```
 - sudo docker run --user root -v /path/to/my/Code:/home/jovyan -e GRANT_SUDO=yes -it --rm -p 8888:8888 final-jupyter
-
+```
 **6. Now go to your browser and type in:**
 
 - http://localhost:8888/
