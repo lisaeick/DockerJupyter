@@ -41,8 +41,7 @@ jobs:
         docker login -u $DOCKER_USER -p $DOCKER_PASSWORD
     - name: Build the Docker image
       run: docker build . --file base-image/Dockerfile --tag dockerjupyter-base:$(date +%s)
-      
-    - name: Docker push
+    - name: Docker tag
       run: docker tag dockerjupyter-base:$(date +%s) ${{secrets.DOCKER_USER}}/dockerjupyter-base/dockerjupyter-base:$(date +%s)
+    - name: Docker push
       run: docker push ${{secrets.DOCKER_USER}}/dockerjupyter-base
-      run: docker rmi ${{secrets.DOCKER_USER}}/dockerjupyter-base
