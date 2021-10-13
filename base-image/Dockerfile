@@ -1,13 +1,13 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
+# Modification of the file "base-notebook" of Jupyter Development Team.
+# original to be found in https://github.com/jupyter/docker-stacks/tree/master/base-notebook
 
-# Ubuntu 20.04 (bionic)
+# Ubuntu 18.04 (bionic)
 # https://hub.docker.com/_/ubuntu/?tab=tags&name=bionic
 ARG ROOT_CONTAINER=ubuntu:bionic
 
 FROM $ROOT_CONTAINER
 
-LABEL maintainer="Jupyter Project <lisa.eick@helsinki.fi>"
+LABEL maintainer="Lisa Eick <>"
 ARG NB_USER="jovyan"
 ARG NB_UID="1000"
 ARG NB_GID="100"

@@ -1,11 +1,12 @@
-# Copyright (c) Jupyter Development Team.
-# Distributed under the terms of the Modified BSD License.
+# Modification of the file "minimal notebook" of Jupyter Development Team.
+# original to be found in https://github.com/jupyter/docker-stacks/tree/master/minimal-notebook
+
 ARG OWNER=lisaeick
 ARG BASE_CONTAINER=$OWNER/dockerjupyter-base
 
 FROM $BASE_CONTAINER
 
-LABEL maintainer=""
+LABEL maintainer="Lisa Eick <>"
 
 USER root
 

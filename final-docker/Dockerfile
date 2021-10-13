@@ -1,3 +1,6 @@
+# Modification of the file tensorflow-notebook of Jupyter Development Team.
+# original to be found in https://github.com/jupyter/docker-stacks/tree/master/tensorflow-notebook
+
 FROM lisaeick/dockerjupyter-middle
 
 LABEL maintainer="Lisa Eick <>"
