@@ -93,7 +93,7 @@ RUN set -x && \
     # Miniforge installer
     miniforge_arch=$(uname -m) && \
     miniforge_installer="Mambaforge-Linux-${miniforge_arch}.sh" && \
-    wget --quiet "https://github.com/conda-forge/miniforge/releases/latest/download/${miniforge_installer}" && \
+    wget --quiet "https://github.com/conda-forge/miniforge/releases/download/4.10.3-9/Mambaforge-Linux-x86_64.sh" && \
     /bin/bash "${miniforge_installer}" -f -b -p "${CONDA_DIR}" && \
     rm "${miniforge_installer}" && \
     # Conda configuration see https://conda.io/projects/conda/en/latest/configuration.html
