@@ -116,9 +116,9 @@ RUN set -x && \
 # Do all this in a single RUN command to avoid duplicating all of the
 # files across image layers when the permissions change
 RUN mamba install --quiet --yes \
-    'notebook=6.3.0' \
-    'jupyterhub' \
-    'jupyterlab' && \
+    'notebook=6.1.0' \
+    'jupyterhub=1.5.0' \
+    'jupyterlab=3.2.0' && \
     mamba clean --all -f -y && \
     npm cache clean --force && \
     jupyter notebook --generate-config && \
